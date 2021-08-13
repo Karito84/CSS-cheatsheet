@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="Resources/index.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheatsheet</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Properties Reference</h1>
+    </header>
+    <main>
+        <h2>Each element on the page can have many style properties:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Usage</th>
+                    <th>Important info/values</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="first-column">font-family</td>
+                    <td>Specifies the typeface of text</td>
+                    <td>
+                        <ul>
+                            <li>The font must be installed on the user's computer or linked as a web font</li>
+                            <li>When using a multi-word font name - use "..."</li>
+                        </ul>
+                    </td>
+                    <td>font-family:"Courier New";</td>
+                </tr>
+                <tr>
+                    <td class="first-column">font-size</td>
+                    <td>Specifies the size of the font</td>
+                    <td>
+                        <ul>
+                            <li>Can be specified in px, %, ems</li>
+                            <li>Default size of text in browsers is 16px</li>
+                        </ul>
+                    </td>
+                    <td class="last-column">font-size: 12px; <br> font size: 75% (=12px)</td>
+                </tr>
+                <tr>
+                    <td class="first-column">font-weight</td>
+                    <td>Controlls how bold or thin text appears</td>
+                    <td>
+                        <ul>
+                            <li>Can be represented with numbers or words</li>
+                            <li>Font-weight:400 is considered normal</li>
+                            <li>Font-weight:700 is considered bold</li>
+                        </ul> 
+                    </td>
+                    <td class="last-column">font-weight: bold;<br> font-weight: normal;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">font-style</td>
+                    <td>Changes appearance of text</td>
+                    <td>
+                        <ul>
+                            <li>It can take 3 values: normal, italic, oblique</li>
+                            <li>Oblique is a regular version of type put on an angle </li>
+                        </ul>
+                    </td>
+                    <td class="last-column">font-style: italic;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">text-transform</td>
+                    <td>Changest the case of text</td>
+                    <td>Takes values: uppercase, lowercase, capitalize</td>
+                    <td class="last-column">text-transform: uppercase;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">line-height</td>
+                    <td>Sets the height of an entire line of tex</td>
+                    <td>Its value is best given in ems,so it is relative to the size of text</td>
+                    <td class="last-column">line-height: 1.4em;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">letter-spacing</td>
+                    <td>Sets the horizontal spacing between each letter in an element</td>
+                    <td>It is useful to increase it on uppercase text to make it easier to read </td>
+                    <td class="last-column">letter-spacing: 0.2em;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">word-spacing</td>
+                    <td>Controls the gap between words</td>
+                    <td>
+                        <ul>
+                            <li>Its value should be given in ems</li>
+                            <li>It is added on top of the default value specified by the font</li> 
+                    </td>
+                        </ul>
+                        <td class="last-column">word-spacing: 1em;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">text-align</td>
+                    <td>Controls the alignment of text</td>
+                    <td>
+                        <ul>
+                            <li>Takes values: left, right, center, justify</li>
+                            <li>Aligns text to the element that holds it (to its parent).</li>
+                        </ul>
+                    </td>
+                    <td class="last-column">text-align:center;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">color</td>
+                    <td>Styles an element’s foreground color
+                    </td>
+                    <td>
+                        <ul>
+                            <li>color names: 147 predefined color names</li>
+                            <li>rgb: numbers between 0 and 255 for each of the colors</li>
+                            <li>hex codes: values for colors in hexadecimal code</li>
+                            <li>hsl: hue(color itself(0-360)), saturation(intensity-%), lightness(50% normal,0% darkest,100% lightest)</li>
+                            <li>hsla: hsl plus another value- alpha, which is the opacity(0-1)</li>
+                        </ul>
+                    </td>
+                    <td class="last-column">color:rgb(100, 100, 100);<br>color:#ee3e80;<br> color:hsl(240,50%,45%);<br>color:hsla(240,30%,90%,0.5);</td>
+                </tr>
+                <tr>
+                    <td class="first-column">background-color</td>
+                    <td>Styles an element’s background color</td>
+                    <td>CSS treats each HTML element as if it appears in a box, and<span>'background-color'</span>sets the color of the background for that box.</td>
+                    <td class="last-column">background-color: aqua;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">opacity</td>
+                    <td>Controls the transparency of an element</td>
+                    <td>Its value ranges from 0 (transparent) to 1 (opaque)</td>
+                    <td class="last-column">opacity: 0.5;</td>
+                </tr>
+                <tr>
+                    <td class="first-column">background-image</td>
+                    <td>Sets the background image of an element</td>
+                    <td>An image URL should be provided url("moon.jpg") as the value of the property</td>
+                    <td class="last-column">background-image: url("...")</td>
+                </tr>
+                <tr>
+                    <td class="first-column">border-radius</td>
+                    <td>Can give an element rounded curved corners</td>
+                    <td>At 50% image will become a circle</td>
+                    <td class="last-column">border-radius:50%;</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>
