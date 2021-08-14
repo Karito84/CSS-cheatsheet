@@ -29,9 +29,7 @@ td {
      border-right: 1px solid midnightblue;
 }
 
-tbody tr: hover {
-    background-color:#edf10d;
-}
+
         
     tbody li {
     margin-left: -20px;
