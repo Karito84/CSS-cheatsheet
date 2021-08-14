@@ -27,10 +27,13 @@ th {
 td {
      border-top: 1px solid midnightblue;
      border-right: 1px solid midnightblue;
-   
-    
 }
-tbody li {
+
+tbody tr: hover {
+    background-color:#edf10d
+}
+        
+    tbody li {
     margin-left: -20px;
 }
 
