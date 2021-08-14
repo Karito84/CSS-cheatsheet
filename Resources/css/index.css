@@ -30,14 +30,11 @@ td {
    
     
 }
-<<<<<<< HEAD:Resources/css/index.css
-=======
 
 tbody tr:hover {
     background-color:#edf10d;
 }        
    
->>>>>>> e0029c2c3c49093c776a5a67918241298582b8c7:Resources/index.css
 tbody li {
     margin-left: -20px;
 }
