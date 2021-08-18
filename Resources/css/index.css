@@ -15,6 +15,7 @@ table {
   border: 2px solid midnightblue;
   margin: 40px;
   text-align: left;
+  border-collapse:collapse;
   
 }
  
@@ -22,13 +23,16 @@ th {
     text-align:center;
     background-color: dodgerblue;
     height: 40px;
+    border-right: 1px solid midnightblue;
 }
 
 td {
      border-top: 1px solid midnightblue;
      border-right: 1px solid midnightblue;
    
-    
+    }
+th, td {
+    padding: 7px 10px 10px 10px;
 }
 
 tbody tr:hover {
